@@ -22,8 +22,8 @@
     >
       <v-list-item class="px-0">
         <component
-          v-if="getComponents()[Object.keys(comment)[0]]"
           :is="Object.keys(comment)[0]"
+          v-if="getComponents()[Object.keys(comment)[0]]"
           :comment="comment[Object.keys(comment)[0]]"
           @intersect="paginate"
           @showReplies="openReply"
@@ -34,9 +34,9 @@
 
     <div class="loading" v-if="loading">
       <v-sheet
-        color="background"
         v-for="i in comments.length <= 0 ? 5 : 1"
         :key="i"
+        color="background"
       >
         <v-skeleton-loader type="list-item-avatar-three-line" />
       </v-sheet>

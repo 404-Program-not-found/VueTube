@@ -1,23 +1,19 @@
 <template>
   <div class="background" id="watch-body">
     <div id="player-container">
-      <v-btn text style="position: fixed; z-index: 69420" to="home">
-        <v-icon>mdi-chevron-down</v-icon>
-      </v-btn>
       <!--   VueTube Player V1   -->
       <vuetubePlayer
-        :sources="sources"
         v-if="useBetaPlayer === 'true' && sources.length > 0"
+        :sources="sources"
       />
 
       <!--   Stock Player   -->
       <legacyPlayer
+        v-if="useBetaPlayer !== 'true'"
         id="player"
         ref="player"
         v-touch="{ down: () => $router.push('/home') }"
-        class="background"
         :vid-src="vidSrc"
-        v-if="useBetaPlayer !== 'true'"
       />
     </div>
 
@@ -61,7 +57,7 @@
           <v-icon class="ml-4" v-if="showMore">mdi-chevron-up</v-icon>
           <v-icon class="ml-4" v-else>mdi-chevron-down</v-icon>
         </div>
-        <div class="d-flex pl-4">
+        <div class="d-flex pl-2">
           <v-btn
             v-for="(item, index) in interactions"
             :key="index"
@@ -108,14 +104,37 @@
           </v-sheet>
         </v-bottom-sheet> -->
       </v-card>
-      <v-divider />
+
+      <v-divider
+        v-if="
+          !$store.state.tweaks.roundTweak || !$store.state.tweaks.roundWatch
+        "
+      />
 
       <!--   Channel Bar   -->
       <div v-if="loaded">
         <v-card
           flat
-          class="channel-section background py-2 px-3 rounded-0"
-          :to="video.channelUrl"
+          class="channel-section py-2 px-3 background"
+          :class="
+            $store.state.tweaks.roundWatch && $store.state.tweaks.roundTweak > 0
+              ? $vuetify.theme.dark
+                ? 'background lighten-1'
+                : 'background darken-1'
+              : ''
+          "
+          to="/channel"
+          :style="{
+            borderRadius: $store.state.tweaks.roundWatch
+              ? `${$store.state.tweaks.roundTweak / 2}rem`
+              : '0',
+            margin:
+              $store.state.tweaks.roundWatch &&
+              $store.state.tweaks.roundTweak > 0
+                ? '1rem'
+                : '0',
+          }"
+          @click="$store.dispatch('channel/fetchChannel', video.channelUrl)"
         >
           <div id="details">
             <div class="avatar-link mr-3">
@@ -136,8 +155,13 @@
             subscribe
           </div>
         </v-card>
-        <v-divider />
       </div>
+
+      <v-divider
+        v-if="
+          !$store.state.tweaks.roundTweak || !$store.state.tweaks.roundWatch
+        "
+      />
 
       <!-- Description -->
       <div v-if="showMore">
@@ -146,12 +170,40 @@
             :render="video.renderedData.description"
           />
         </div>
-        <v-divider />
       </div>
 
+      <v-divider
+        v-if="
+          showMore &&
+          (!$store.state.tweaks.roundTweak || !$store.state.tweaks.roundWatch)
+        "
+      />
+
       <!-- Comments -->
-      <div v-if="loaded && video.commentData" @click="toggleComment" v-ripple>
-        <v-card flat tile class="background comment-renderer px-3">
+      <div v-if="loaded && video.commentData" @click="toggleComment">
+        <v-card
+          v-ripple
+          flat
+          tile
+          class="comment-renderer px-3 background"
+          :class="
+            $store.state.tweaks.roundWatch && $store.state.tweaks.roundTweak > 0
+              ? $vuetify.theme.dark
+                ? 'background lighten-1'
+                : 'background darken-1'
+              : ''
+          "
+          :style="{
+            borderRadius: $store.state.tweaks.roundWatch
+              ? `${$store.state.tweaks.roundTweak / 2}rem !important`
+              : '0',
+            margin:
+              $store.state.tweaks.roundWatch &&
+              $store.state.tweaks.roundTweak > 0
+                ? '1rem'
+                : '0',
+          }"
+        >
           <v-card-text class="comment-count keep-spaces px-0">
             <template v-for="text in video.commentData.headerText.runs">
               <template v-if="text.bold">
@@ -163,8 +215,13 @@
           <v-icon v-if="showComments" dense>mdi-unfold-less-horizontal</v-icon>
           <v-icon v-else dense>mdi-unfold-more-horizontal</v-icon>
         </v-card>
-        <v-divider />
       </div>
+
+      <v-divider
+        v-if="
+          !$store.state.tweaks.roundTweak || !$store.state.tweaks.roundWatch
+        "
+      />
 
       <swipeable-bottom-sheet
         v-model="showComments"
@@ -313,7 +370,6 @@ export default {
       // using item.action in the v-for loop
       this[name]();
     },
-    dislike() {},
     async share() {
       // this.share = !this.share;
       await Share.share({
@@ -365,7 +421,8 @@ export default {
           {
             name: "Likes",
             icon: "mdi-thumb-up-outline",
-            // action: null,
+            // action: this.like(),
+            actionName: "like",
             value: this.likes,
             disabled: true,
           },
@@ -384,6 +441,24 @@ export default {
             actionName: "share",
             disabled: false,
           },
+          {
+            name: "Save",
+            icon: "mdi-plus-box-multiple-outline",
+            actionName: "enqueue",
+            disabled: true,
+          },
+          // {
+          //   name: "Quality",
+          //   icon: "mdi-high-definition",
+          //   actionName: "quality",
+          //   disabled: false,
+          // },
+          // {
+          //   name: "Speed",
+          //   icon: "mdi-speedometer",
+          //   actionName: "speed",
+          //   disabled: false,
+          // },
         ],
         showMore: false,
         showComments: false,

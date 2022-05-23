@@ -1,6 +1,9 @@
 <template>
-  <v-card class="dialog-base">
-    <div class="toolbar-container">
+  <v-card flat class="dialog-base background">
+    <div
+      class="toolbar-container d-flex flex-column background"
+      style="flex-direction: column !important"
+    >
       <v-toolbar color="background" flat>
         <slot name="header"></slot>
       </v-toolbar>
