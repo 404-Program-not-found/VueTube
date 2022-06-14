@@ -38,6 +38,8 @@ Read this in other languages: [Español](readme.es.md)
 - 🖌️ Customizable UI: You can fully customize the accent color, and other parts of the UI to remove features that you don't use!
 - ⬆️ Auto Update: Be notified when an update is available & downgrade if you dislike it!
 - 👁️ Tracking Protection: No telemetry is sent from your device by default
+- 📺 Custom video player
+- 👎 Return YouTube Dislike
 
 ## Install
 
@@ -45,13 +47,29 @@ Read this in other languages: [Español](readme.es.md)
 
 To install please visit www.vuetube.app/install
 
+<details>
+  <summary>Or click here to display all versions avaiable</summary>
+<br />
+
+### Android
+| <a href=https://nightly.link/VueTubeApp/VueTube/workflows/ci/main/android.zip><img id="im" width="200" src=/resources/getunstable.png></a>  | <a href=https://cdn.discordapp.com/attachments/946910031562027029/972164599816273930/VueTube-Canary-May-6-2022.apk><img id="im" width="200" src=/resources/getcanary.png></a> | <a href=https://vuetube.app/install><img id="im" width="200" src=/resources/getstable.png></a>  |
+| ------------- | ------------- |  ------------- |
+| A lot of bugs, but early access to features | Less bugs than unstable, slightly more features than stable | Not available until the app becomes more developed |
+  
+
+### iOS
+| <a href=https://nightly.link/VueTubeApp/VueTube/workflows/ci/main/iOS.zip><img id="im" width="200" src=/resources/getunstable.png></a>  | <a href=https://cdn.discordapp.com/attachments/949908267855921163/972164558930198528/VueTube-Canary-May-6-2022.ipa><img id="im" width="200" src=/resources/getcanary.png></a> | <a href=https://vuetube.app/install><img id="im" width="200" src=/resources/getstable.png></a>  |
+| ------------- | ------------- |  ------------- |
+| A lot of bugs, but early access to features | Less bugs than unstable, slightly more features than stable | Not available until the app becomes more developed |
+  
+</details>
+
 ## Plans
 
 <img src="./resources/plans.svg" alt="VueTube icon" width="300"/>
 
 - 🔍 Advanced Search
 - 🗞️ Locally store watch history
-- 📺 A custom video player
 - ✂️ Shorts
 - 🧑 Google account sign in
 - 🖼️ Picture in picture mode
@@ -60,6 +78,16 @@ To install please visit www.vuetube.app/install
 ## Screenshots
 
 View on our website: www.vuetube.app/info/screenshots
+
+<details>
+  <summary> Or click here to display screenshots </summary>
+<br />
+  
+<img src="https://vuetube.app/wtch.png" width="400">
+<img src="https://vuetube.app/stng.png" width="400">
+<img src="https://vuetube.app/srch.png" width="400">
+     
+</details>
 
 ### Technologies used
 

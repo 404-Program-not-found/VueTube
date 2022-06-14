@@ -38,6 +38,8 @@ Leer en otros idiomas: [English](readme.md)
 - 🖌️ Interfaz personalizable: ¡Puedes personalizar completamente el color principal, y otras partes de la interfaz para eliminar características que no usas!
 - ⬆️ Actualizaciones automáticas: ¡Recibe una notificación cuando haya una actualización disponible y baja de versión si no te gusta!
 - 👁️ Protección contra el rastreo: No se envían datos desde tu dispositivo por defecto
+- 📺 Reproductor de vídeo personalizado
+- 👎 Return YouTube Dislike
 
 ## Instalar
 
@@ -45,13 +47,22 @@ Leer en otros idiomas: [English](readme.md)
 
 Para instalar, por favor, visita www.vuetube.app/install
 
+<details>
+  <summary>O haz clic aquí para mostrar todas las versiones disponibles</summary>
+<br />
+  
+| <a href=https://nightly.link/VueTubeApp/VueTube/workflows/ci/main/android.zip><img id="im" width="200" src=/resources/getunstable.png></a>  | <a href=https://cdn.discordapp.com/attachments/946910031562027029/972164599816273930/VueTube-Canary-May-6-2022.apk><img id="im" width="200" src=/resources/getcanary.png></a> | <a href=https://vuetube.app/install><img id="im" width="200" src=/resources/getstable.png></a>  |
+| ------------- | ------------- |  ------------- |
+| Un montón de bugs, pero acceso anticipado a funciones | Menos bugs que la inestable, aún así más funciones que la estable | No disponible hasta que la app este más desarrollada |
+  
+</details>
+
 ## Planes
 
 <img src="./resources/plansES.PNG" alt="VueTube icon" width="300"/>
 
 - 🔍 Búsqueda avanzada
 - 🗞️ Historial de búsqueda local
-- 📺 Reproductor de vídeo personalizado
 - ✂️ Shorts (Cortos)
 - 🧑 Inicio de sesión con tu cuenta de Google
 - 🖼️ Modo Imagen en imagen
@@ -60,6 +71,16 @@ Para instalar, por favor, visita www.vuetube.app/install
 ## Capturas de pantalla
 
 Echalas un vistazo en nuestro sitio web: www.vuetube.app/info/screenshots
+
+<details>
+  <summary> O haz clic aquí para mostrar las capturas </summary>
+<br />
+  
+<img src="https://vuetube.app/wtch.png" width="400">
+<img src="https://vuetube.app/stng.png" width="400">
+<img src="https://vuetube.app/srch.png" width="400">
+     
+</details>
 
 ### Tecnologías usadas
 
