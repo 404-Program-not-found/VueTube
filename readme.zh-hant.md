@@ -3,7 +3,7 @@
     <img src="https://cdn.discordapp.com/attachments/751596360108605500/980418672331988992/VueTube_Dark.svg" alt="VueTube icon" width="500"/>
   </a>
   </br>
-  <sub>Logo by <a href="https://github.com/afnzmn">@afnzmn</a></sub>
+  <sub>徽標：<a href="https://github.com/afnzmn">@afnzmn</a></sub>
   </br>
   </br>
 <strong>輕巧的 FOSS 流媒體客戶端</strong>
@@ -32,7 +32,7 @@
 
 ## 功能
 
-<img src="./resources/readme-zh-hant/features.zh-hant.svg" alt="VueTube icon" width="300"/>
+<img src="./resources/readme-zh-hant/Features.zh-hant.svg" alt="VueTube icon" width="300"/>
 
 - 🎨 可自定義的主題：燈光、暗黑、OLED、或者是色彩豐富的主題
 - 🖌️ UI：可以完全自定義顏色，以及其他部分的UI以便移除您不使用的功能！
@@ -43,7 +43,7 @@
 
 ## 下載
 
-<img src="./resources/readme-zh-hant/install.zh-hant.svg" alt="VueTube icon" width="300"/>
+<img src="./resources/readme-zh-hant/Install.zh-hant.svg" alt="VueTube icon" width="300"/>
 
 請訪問 www.vuetube.app/install 來下載 VueTube。
 
@@ -66,7 +66,7 @@
 
 ## 计划
 
-<img src="./resources/readme-zh-hant/plans.zh-hant.svg" alt="VueTube icon" width="300"/>
+<img src="./resources/readme-zh-hant/Plans.zh-hant.svg" alt="VueTube icon" width="300"/>
 
 - 🔍 高級搜索功能
 - 🗞️ 本地存儲觀看歷史

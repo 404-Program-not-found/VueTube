@@ -3,7 +3,7 @@
     <img src="https://cdn.discordapp.com/attachments/751596360108605500/980418672331988992/VueTube_Dark.svg" alt="VueTube icon" width="500"/>
   </a>
   </br>
-  <sub>Logo by <a href="https://github.com/afnzmn">@afnzmn</a></sub>
+  <sub>徽标：<a href="https://github.com/afnzmn">@afnzmn</a></sub>
   </br>
   </br>
 <strong>轻巧的 FOSS 流媒体客户端</strong>
@@ -28,11 +28,11 @@
   <a href="https://twitter.com/VueTubeApp" alt="Twitter"><img src="https://img.shields.io/twitter/follow/VueTubeApp?label=Follow&style=flat&logo=twitter"></img></a>
 </p>
 
-其他语言版本：[English,](readme.md) [Español,](readme.es.md) [简体中文,](readme.zh-hans.md) [日本語](readme.ja.md)
+其他语言版本：[English,](readme.md) [Español,](readme.es.md) [繁體中文,](readme.zh-hant.md) [日本語](readme.ja.md)
 
 ## 功能
 
-<img src="./resources/readme-zh-hans/features.zh-hans.svg" alt="VueTube icon" width="300"/>
+<img src="./resources/readme-zh-hans/Features.zh-hans.svg" alt="VueTube icon" width="300"/>
 
 - 🎨 可自定义的主题：灯光、暗黑、OLED、或者是色彩丰富的主题
 - 🖌️ UI：可以完全自定义颜色，以及其他部分的UI以便移除您不使用的功能！
@@ -43,7 +43,7 @@
 
 ## 下载
 
-<img src="./resources/readme-zh-hans/install.zh-hans.svg" alt="VueTube icon" width="300"/>
+<img src="./resources/readme-zh-hans/Install.zh-hans.svg" alt="VueTube icon" width="300"/>
 
 请访问 www.vuetube.app/install 来下载 VueTube。
 
@@ -66,7 +66,7 @@
 
 ## 计划
 
-<img src="./resources/readme-zh-hans/plans.zh-hans.svg" alt="VueTube icon" width="300"/>
+<img src="./resources/readme-zh-hans/Plans.zh-hans.svg" alt="VueTube icon" width="300"/>
 
 - 🔍 高级搜索功能
 - 🗞️ 本地存储观看历史
