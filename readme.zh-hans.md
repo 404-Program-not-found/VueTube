@@ -20,7 +20,7 @@
   <a><img src="https://img.shields.io/snyk/vulnerabilities/github/VueTubeApp/VueTube" alt="Vulnerabilities"></img></a>
   <a><img src="https://img.shields.io/librariesio/github/VueTubeApp/VueTube" alt="Dependencies"></img></a>
   <a><img src="https://img.shields.io/tokei/lines/github/VueTubeApp/VueTube" alt="Lines"></img></a>
-  <a href="https://github.com/VueTubeApp/VueTube/actions/workflows/ci.yml" alt="CI"><img src="https://github.com/VueTubeApp/VueTube/actions/workflows/ci.yml/badge.zh-hans.svg"></img></a>
+  <a href="https://github.com/VueTubeApp/VueTube/actions/workflows/ci.yml" alt="CI"><img src="https://github.com/VueTubeApp/VueTube/actions/workflows/ci.yml/badge.svg"></img></a>
   <a href="https://vuetube.app" alt="Website"><img src="https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fvuetube.app"></img></a>
   <a href="https://reddit.com/r/vuetube" alt="Reddit"><img src="https://img.shields.io/reddit/subreddit-subscribers/vuetube?label=r%2FVuetube&logo=reddit&logoColor=white"></img></a>
   <a href="https://t.me/VueTube" alt="Telegram"><img src="https://img.shields.io/endpoint?color=neon&style=flat&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fvuetube"></img></a>
@@ -28,11 +28,11 @@
   <a href="https://twitter.com/VueTubeApp" alt="Twitter"><img src="https://img.shields.io/twitter/follow/VueTubeApp?label=Follow&style=flat&logo=twitter"></img></a>
 </p>
 
-其他语言版本：[English,](readme.md) [Español,](readme.es.md) [繁體中文,](readme.zh-hant.md) [日本語](readme.ja.md)
+其他语言版本：[English,](readme.md) [Español,](readme.es.md) [简体中文,](readme.zh-hans.md) [日本語](readme.ja.md)
 
 ## 功能
 
-<img src="./resources/features.zh-hans.svg" alt="VueTube icon" width="300"/>
+<img src="./resources/readme-zh-hans/features.zh-hans.svg" alt="VueTube icon" width="300"/>
 
 - 🎨 可自定义的主题：灯光、暗黑、OLED、或者是色彩丰富的主题
 - 🖌️ UI：可以完全自定义颜色，以及其他部分的UI以便移除您不使用的功能！
@@ -43,7 +43,7 @@
 
 ## 下载
 
-<img src="./resources/install.zh-hans.svg" alt="VueTube icon" width="300"/>
+<img src="./resources/readme-zh-hans/install.zh-hans.svg" alt="VueTube icon" width="300"/>
 
 请访问 www.vuetube.app/install 来下载 VueTube。
 
@@ -66,7 +66,7 @@
 
 ## 计划
 
-<img src="./resources/plans.zh-hans.svg" alt="VueTube icon" width="300"/>
+<img src="./resources/readme-zh-hans/plans.zh-hans.svg" alt="VueTube icon" width="300"/>
 
 - 🔍 高级搜索功能
 - 🗞️ 本地存储观看历史
@@ -103,7 +103,7 @@
   <img src="https://contrib.rocks/image?repo=VueTubeApp/VueTube" />
 </a>
 
-<sub>Made with [contrib.rocks](https://contrib.rocks). </sub>
+<sub>使用[contrib.rocks](https://contrib.rocks)制作。</sub>
 
 ## 鸣谢 
 
